@@ -12,7 +12,8 @@
   justify-content: center;
   gap: 1rem;
   width: 100%;
-  height: 50vh;
+  height: 100%;
+  padding: 1rem 0;
  background-image: url("assets/back.png");
  background-position: center;
  background-repeat: no-repeat;
@@ -64,7 +65,23 @@
   border-bottom: 2px solid #BE5E72;
   color: rgb(62, 60, 60);
 }
-
+.sobre{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1rem;
+  color: #BE5E72;
+  max-width: 80%;
+}
+.sobre div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sobre p{
+  color: #493C32;
+}
 .grid{
   width: 100%;
   display: grid;
@@ -170,5 +187,11 @@ footer img{
   .grid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+.sobre{
+  flex-direction: column;
+}
+.sobre p{
+  color: #493C32;
 }
 }
